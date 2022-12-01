@@ -14,9 +14,17 @@ const BookSchema = new Schema({
         type: String,
         required: [ true, 'El link del pdf es obligatorio']
     },
+    id_file: {
+        type: String,
+        default: '',
+    },
     img: {
         type: String,
         required: [ true, 'El link del img es obligatorio']
+    },
+    id_img: {
+        type: String,
+        default: '',
     },
     description: {
         type: String,
